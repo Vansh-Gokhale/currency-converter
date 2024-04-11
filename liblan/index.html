@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Nice To See You Again</h1>
+        <label for="name">
+            Enter Name
+            <input type="text" id="name" name="name" required>
+        </label>
+        <label for="email">
+            Enter Email or Phone number
+            <input type="email" id="email" name="email" required>
+        </label>
+        <label for="password">
+            Password
+            <input type="password" id="password" name="password" required>
+        </label>
+        <button type="submit">Sign in</button>
+        <hr>
+        <button type="button">Sign in with Google</button>
+        <button type="button">Forgot Password?</button>
+        <button type="button">Don't have an account? Sign up now</button>
+    </form>
+</body>
+</html>
